@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter & Calculator</title>
+    <link rel="stylesheet" href="./styles/css/style.css" />
+  </head>
+  <body>
+    <section id="calculator">
+      <div class="calc-container">
+        <h1 class="calc-title">Calculator</h1>
+        <input type="text" id="calc-value" readonly />
+        <div class="calc-buttons">
+          <button class="calc-button" type="button" data-value="7">7</button>
+          <button class="calc-button" type="button" data-value="8">8</button>
+          <button class="calc-button" type="button" data-value="9">9</button>
+          <button class="calc-button" type="button" data-value="/">/</button>
+          <button class="calc-button" type="button" data-value="4">4</button>
+          <button class="calc-button" type="button" data-value="5">5</button>
+          <button class="calc-button" type="button" data-value="6">6</button>
+          <button class="calc-button" type="button" data-value="*">*</button>
+          <button class="calc-button" type="button" data-value="1">1</button>
+          <button class="calc-button" type="button" data-value="2">2</button>
+          <button class="calc-button" type="button" data-value="3">3</button>
+          <button class="calc-button" type="button" data-value="-">-</button>
+          <button class="calc-button" type="button" data-value="0">0</button>
+          <button class="calc-button" type="button" data-value="C">C</button>
+          <button class="calc-button" type="button" data-value="=">=</button>
+          <button class="calc-button" type="button" data-value="+">+</button>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section id="converter">
+      <div class="converter-container">
+        <h2>Converter</h2>
+        <div class="converter-inputs">
+          <input type="number" id="currency-value" placeholder="Enter amount" />
+          <select id="from-currency">
+            <option value="/" disabled selected>Choise</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="PLN">PLN</option>
+          </select>
+          <select id="to-currency">
+            <option value="/" disabled selected>Choise</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="PLN">PLN</option>
+          </select>
+        </div>
+        <div class="converter-result">
+          <p id="conversion-result">Result will appear here</p>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
