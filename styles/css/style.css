@@ -115,4 +115,8 @@
   margin: 0;
 }
 
+body {
+  touch-action: manipulation;
+}
+
 /*# sourceMappingURL=style.css.map */

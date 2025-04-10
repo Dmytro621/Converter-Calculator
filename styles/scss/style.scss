@@ -1,2 +1,6 @@
 @use './calculator';
 @use './converter';
+
+body {
+    touch-action: manipulation;
+}
